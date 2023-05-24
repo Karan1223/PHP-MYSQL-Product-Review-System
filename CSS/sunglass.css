@@ -1,0 +1,882 @@
+@font-face {
+    font-family: sub-heading-font;
+    src: url("../fonts/raleway.medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: body-font;
+    src: url("../fonts/panton.light-caps.otf") format("opentype");
+}
+@font-face {
+    font-family: body-sub-heading-font;
+    src: url("../fonts/glacial-indifference.regular.otf") format("opentype");
+}
+
+/*Styling body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:16px;
+
+}
+
+/*header section design*/
+header{
+    background-color: darkslategrey;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+}
+
+header img{
+    padding-top: 20px;
+    padding-left: 10px;
+    float: left;
+    width: 95px;
+    height: 35px;
+}
+header h3{
+    float: left;
+    padding-top: 30px;
+    padding-left: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    color: white;
+}
+
+header nav ul#navigation {
+    float: left;
+    list-style-type: none;
+    padding-top: 28px;
+    padding-left: 40px;
+}
+
+header nav ul#navigation li {
+    display: inline;
+}
+
+header nav ul#navigation li a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.582);;
+    padding: 12px;
+}
+
+header nav ul#navigation li a:hover{
+    color: white;
+}
+
+header nav ul#icons{
+    margin-right: 20px;
+}
+
+header nav ul#icons li a img{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+
+/*Designing the body main sections*/
+
+section#intro-pic img{
+    padding-top: 85px;
+    height: 500px;
+    width: 100%;
+}
+
+/*designing of products */
+section.vertical {
+    width: 10%;
+    border-color: grey;
+    padding: 10px;
+    background-color: #eeee;
+    float: left;
+    margin-top: 25px;
+    min-height: 600px;
+}
+section.vertical-2{
+    width: 100%;
+}
+.vertical p{
+    font-family: body-sub-heading-font;
+    font-weight: bold;
+    font-size: 20px;
+    padding:10px;
+   
+}
+.vertical li a ,.form-check label{
+    font-family: body-sub-heading-font;
+    text-decoration: none;
+    color:grey;
+   
+    margin:10px;
+    line-height: 20px;
+}
+
+.cs_button  {
+    border-radius: 3px;
+    background-color: #2f4f4f;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px 70px;
+    width: 50%;
+    
+}
+
+div.grid{
+    display: grid;
+    padding:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    margin:5px;
+    font-family: body-sub-heading-font;
+    
+}
+.col {
+    /* background-color: #c2c2c2; */
+    text-align: center;
+    border: 1px solid #888;
+    padding: 15px;
+
+}
+
+.col_bot {
+    background-color: #eeee;
+    padding: 10px;
+}
+
+.col:hover {
+    background-color: #eeee;
+    box-shadow: 0 3px 10px rgb (0,0,0,0.2);
+}
+
+.col img{
+    height:300px;
+    width: 300px;
+}
+.col h5{
+    color:grey;
+}
+.col p {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+
+
+/*Designing the abous us section*/
+section#aboutUs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    height: 450px;
+}
+
+section#aboutUs div img{
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+section#aboutUs > div{
+    height: 400px;
+    width: 600px;
+}
+section#aboutUs div h3{
+    text-align: start;
+    font-family: body-font;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+section#aboutUs div p{
+    color: grey;
+}
+
+/*Designing sub navigation section*/
+section#sub-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: grey;
+    border-width: 2px;
+    padding: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+section#sub-navigation > div p{
+    margin-left: 60px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 800;
+    color: darkslategray;
+}
+
+section#sub-navigation > div a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    color: cornflowerblue;
+}
+
+section#sub-navigation > div img{
+    float: left;
+}
+
+section#sub-navigation > div a:hover{
+    color: grey;
+}
+
+
+
+/*Designing the footer section*/
+footer{
+    background-color: darkslategrey;
+    height: 430px;
+}
+
+/*Designing the social media section*/
+footer div#social-media{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer div#social-media img{
+    padding: 5px;
+    height: 40px;
+}
+
+footer div#social-media a{
+    text-decoration: none;
+}
+
+/*Design the footer navigation*/
+div#footer-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+div#footer-navigation ul{
+    color: white;
+    font-size: 20px;
+}
+
+div#footer-navigation ul li{
+    padding-top: 15px;
+}
+
+div#footer-navigation ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 15px;
+}
+
+div#footer-navigation ul li a:hover{
+    color: white;
+}
+
+/*Designing rest of the information*/
+section#rest-info{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: solid;
+    border-color: rgba(255, 255, 255, 0.582);
+    margin-left: 80px;
+    margin-right: 80px;
+    border-width: 1px;
+    padding-top: 15px;
+}
+
+section#rest-info > div{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+section#rest-info > div p{
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 12px;
+}
+section#rest-info > div a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.582);
+    padding: 15px;
+}
+
+section#rest-info > div img{
+    height: 40px;
+    width: 60px;
+    padding: 10px;
+}
+
+section#rest-info > div a:hover{
+    color: white;
+}
+
+
+  /* Designing for modal */
+.col_md7 {
+    width: 70%;
+    /* float: right; */
+    text-align: center;
+    padding: 40px 80px;
+}
+.container {
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 400px;
+
+}
+.col_md5 {
+    width: 30%;
+    float: left;
+    height: auto;
+
+}
+.modal_head{
+    font-size: 30px;
+    font-weight: bold;
+    color: #2f4f4f;
+}
+
+.col_md5 img{
+    border: 2px solid black;
+}
+.col_md7 p{
+    color: #2f4f4f;
+    text-align: justify;
+}
+.col_md7p{
+    text-align: center;
+    font-size: 25px;
+
+}
+.col_md7btn {
+    margin: 20px 70px;
+    border-radius: 3px;
+    background-color: #2f4f4f;
+    color: white;
+    padding: 15px 20px;
+    width: 20%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+ 
+/*Responsive deign*/
+@media only screen and (max-width: 1220px){
+    /*Designing header responsive*/
+    header{
+        height: 70px;
+    }
+    
+    header img{
+        width: 25px;
+        height: 15px;   
+    }
+    header h3{
+        font-size: 7px;
+    }
+
+    header nav ul#navigation li a{
+        font-size: 10px;
+        padding: 7px;
+    }
+    
+    header nav ul#icons li a img{
+        height: 15px;
+        width: 15px;
+        float: right;
+        margin-top: 10px;
+    }
+
+    /*Designing main section responsive*/
+    main h3{
+        font-size: 20px;
+    }
+    
+    section#intro-pic img{
+        height: 400px;
+        padding-top: 70px;
+    }
+    /*Designing shop categories responsive*/
+    section#shop-categories{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: -30px;
+    }
+
+    section#shop-categories > div img{
+        height: 150px;
+        width: 250px;
+        border-radius: 20px;
+    }
+
+    section#shop-categories div p#caption{
+        font-size: 15px;
+    }
+    
+    section#shop-categories div p#sub-caption{
+        font-size: 7px;
+    }
+
+    main section#shop-categories div div a{
+        font-size: 10px;
+    }
+
+    section#shop-categories div div{
+        width: 12%;
+        height: 15px;
+        padding-top: 1px;
+    }
+
+    section#shop-categories div{
+        height: 270px;
+        width: 300px;
+    }
+
+    /*Designing popular design section responsive*/
+    section#popular-designs{
+        height: 150px;
+    }
+
+    section#popular-designs div img{
+        height: 100px;
+        width: 200px; 
+    }
+    
+    section#popular-designs > div a{
+        font-size: 12px;
+    }
+
+    /*Designing about us section responsive*/
+    section#aboutUs{
+        margin-top: 90px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    section#aboutUs div img{
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+        padding-top: 50px;
+    }
+
+    section#aboutUs > div{
+        height: 200px;
+        width: 300px;
+    }
+    section#aboutUs div h3{
+        font-size: 17px;
+    }
+    section#aboutUs div p{
+        font-size: 10px;
+    }
+
+    /*Designing sub navigation section responsive*/
+    section#sub-navigation > div p{
+        font-size: 10px;
+        margin-left: 40px;
+    }
+    
+    section#sub-navigation > div a{
+        font-size: 10px;
+    }
+    
+    section#sub-navigation > div img{
+        float: left;
+        height: 30px;
+    }
+
+    /*Designing our brands section responsive*/
+    section#our-brands img{
+        height: 50px;
+        width: 50px;
+    }    
+
+    /*designing vertical section responsive*/
+    .vertical p {
+       
+
+        font-size: 13px;
+       
+    }
+    .vertical li a, .form-check label {
+        font-size: 13px;
+        
+    }
+    /*Designing footer section responsive*/
+    footer{
+        height: 260px;
+    }
+    
+    /*Designing social media section responsive*/
+    footer div#social-media img{
+        height: 30px;
+    }
+
+    /*Designing footer navigation section responsive*/
+    div#footer-navigation{
+        padding-top: 20px;
+    }
+    div#footer-navigation ul{
+        font-size: 10px;
+    }
+    
+    div#footer-navigation ul li{
+        padding-top: 8px;
+    }
+    
+    div#footer-navigation ul li a{
+       font-size: 10px;
+    }
+
+    /*Designing rest information section responsive*/
+    section#rest-info{
+        margin-top: 30px;
+        padding-top: 7px;
+    }
+
+    section#rest-info > div p{
+        font-size: 8px;
+    }
+    section#rest-info > div a{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    section#rest-info > div img{
+        height: 20px;
+        width: 30px;
+        padding: 5px;
+    }
+
+    /* making grid responsive */
+    
+
+}
+
+
+
+
+	
+	
+@media only screen and (max-width: 740px){
+    /*Designing header responsive*/
+    header{
+        height: 50px;
+    }
+
+    header h3{
+        margin-top: -5px;
+    }
+    
+    header nav ul#navigation{
+        margin-top: -10px;
+        margin-left: -30px;
+    }
+    header nav ul#navigation li a{
+        font-size: 7px;
+        padding: 2px;
+    }
+    
+    header nav ul#icons{
+        margin-right: 10px;
+    }
+
+    header nav ul#icons li a img{
+        height: 8px;
+        width: 8px;
+        float: right;
+        margin-top: 5px;
+    }
+
+    /*Designing main section responsive*/
+    section#intro-pic img{
+        height: 200px;
+        padding-top: 50px;
+    }
+
+    /*Designing popular design section responsive*/
+    section#popular-designs{
+        height: 400px;
+        flex-direction: column;
+    }
+
+    /*Designing about us section responsive*/
+    section#aboutUs div img{
+        height: 150px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    /*Designing sub navigation section responsive*/
+    section#sub-navigation{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 250px;
+    }
+
+    section#sub-navigation > div{
+        width: 230px;
+        height: 60px;
+    }
+    section#sub-navigation > div p{
+        font-size: 8px;
+    }
+    
+    section#sub-navigation > div a{
+        font-size: 8px;
+        text-align: center;
+    }
+    
+    section#sub-navigation > div img{
+        float: left;
+        height: 30px;
+    }
+
+    footer{
+        height: 280px;
+    }
+
+    section#rest-info{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .vertical p {
+       
+
+        font-size: 13px;
+       
+    }
+div.grid {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:15px;
+
+    }
+
+}
+
+/*grid responsive*/
+
+
+
+@media only screen and (min-width: 820px) and (max-width:1219px) {
+    div.grid {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:15px;
+
+    }
+    .vertical p {
+       
+
+        font-size: 13px;
+       
+    }
+	section.vertical {
+    width: 15%;
+ 
+}
+
+.col_md7 {
+    padding-left:325px;
+}
+.col_md7btn {
+    width:40%;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:860px) {
+	section.vertical {
+    width: 15%;
+ 
+}
+   div.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+}
+    .vertical p {
+       
+
+        font-size: 13px;
+       
+    }
+	.col img {
+    height: 160px;
+    width: 160px;
+}
+.cs_button{
+    margin:auto;
+}
+.col_md5 {
+
+    height: 400px;
+}
+
+.col_md7btn {
+    width:100%;
+}
+.modal-content {
+    height:470px;
+}
+.col_md5 img {
+    margin-top:115px;
+}
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width:767px) {
+	.cs_button {
+        margin:20px auto;
+    }
+    
+	div.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+}
+.vertical p {
+       
+
+        font-size: 13px;
+       
+    }
+	.col img {
+    height: 160px;
+    width: 160px;
+	}
+	section.vertical {
+    width: 20%;
+ 
+	}
+	header nav ul#navigation li a {
+    font-size: 7px;
+    padding: 2px;
+}
+	}
+
+
+
+
+@media only screen and (min-width:480px) and (max-width:567px) {
+	
+	div.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+	}
+	.vertical p {
+       
+
+        font-size: 13px;
+       
+    }
+	.col img {
+    height: 160px;
+    width: 160px;
+	}
+	section.vertical {
+    width: 90%;
+ 
+	}
+
+	}
+	
+	
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.cs_button {
+        margin:20px auto;
+    }
+	div.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+             }
+    .vertical p {
+    font-size: 30px;
+    line-height: 45px;
+}
+	.vertical ul li {
+    font-size: 30px;
+    line-height: 35px;
+}
+			
+	section.vertical {
+    width: 100%;
+	padding:30px;
+ 
+    }
+    .col_bot p {
+    font-size: 20px;
+}
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+	
