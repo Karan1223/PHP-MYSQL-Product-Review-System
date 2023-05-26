@@ -30,8 +30,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <link rel="shortcut icon" href="images/home/favicon.ico">
 
     <header>
-      
-        <h3>Sodhi & Sons</h3>
+        <img src="images/home/logo3.png" alt="Logo">
+        <h3>ShopLens</h3>
         <nav>
             <ul id="navigation">
                 
@@ -40,7 +40,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li><a href="product.php">SUNGLASSES</a></li>
                 <li><a href="eyewear.php">EYEGLASSES</a></li>
                 <li><a href="contact_lens.php">LENSES</a></li>
-                <li><a href="appointment.php">BOOK APPOINTMENT</a></li>
+               
                 <li><a href="contactus.php">CONTACT US</a></li>
                 <li><a href="logout.php">LOGOUT</a></li>
                 

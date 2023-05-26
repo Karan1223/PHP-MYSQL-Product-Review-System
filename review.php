@@ -18,7 +18,7 @@ $id = $_GET['id'];
 <html lang="en">
 
 <head>
-    <title>Displaying Review</title>
+    <title>Adding Review</title>
     <meta charset="UTF-8">
     <meta name="author" content="Amrita">
     <meta name="keywords" content="HTML, CSS, Homepage design">
@@ -30,11 +30,11 @@ $id = $_GET['id'];
         <?php include "./CSS/review.css" ?>
         
     </style>
-  
+    <link rel="shortcut icon" href="images/home/favicon.ico">
 
     <header>
-      
-        <h3>ShopLenses</h3>
+        <img src="images/home/logo3.png" alt="Logo">
+        <h3>ShopLens</h3>
         <nav>
             <ul id="navigation">
                 
@@ -43,7 +43,7 @@ $id = $_GET['id'];
                 <li><a href="product.php">SUNGLASSES</a></li>
                 <li><a href="eyewear.php">EYEGLASSES</a></li>
                 <li><a href="contact_lens.php">LENSES</a></li>
-                <li><a href="appointment.php">BOOK APPOINTMENT</a></li>
+          
                 <li><a href="contactus.php">CONTACT US</a></li>
                 <li><a href="logout.php">LOGOUT</a></li>
                 
